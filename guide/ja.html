@@ -7,97 +7,8 @@
   <meta name="description" content="Entryo 使い方ガイド">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="guide-page">
+<body class="guide-page" id="top">
   <main class="guide-shell">
-<details class="mobile-toc">
-  <summary class="mobile-toc-toggle">目次</summary>
-  <div class="mobile-toc-panel">
-  <p class="toc-title">目次</p>
-  <ol>
-    <li class="toc-level-2"><a href="#1-はじめに">1. はじめに</a></li>
-    <li class="toc-level-3"><a href="#帳簿を作成する">帳簿を作成する</a></li>
-    <li class="toc-level-3"><a href="#最初の記録を追加する">最初の記録を追加する</a></li>
-    <li class="toc-level-3"><a href="#帳簿を切り替える">帳簿を切り替える</a></li>
-    <li class="toc-level-3"><a href="#無料版と-pro">無料版と Pro</a></li>
-    <li class="toc-level-2"><a href="#2-記録">2. 記録</a></li>
-    <li class="toc-level-3"><a href="#記録を追加する">記録を追加する</a></li>
-    <li class="toc-level-3"><a href="#記録を編集する">記録を編集する</a></li>
-    <li class="toc-level-3"><a href="#記録を削除する">記録を削除する</a></li>
-    <li class="toc-level-3"><a href="#日常統計に含めない">日常統計に含めない</a></li>
-    <li class="toc-level-3"><a href="#クイック入力バー">クイック入力バー</a></li>
-    <li class="toc-level-2"><a href="#3-帳簿-カテゴリー-通貨">3. 帳簿、カテゴリー、通貨</a></li>
-    <li class="toc-level-3"><a href="#帳簿">帳簿</a></li>
-    <li class="toc-level-3"><a href="#帳簿設定">帳簿設定</a></li>
-    <li class="toc-level-3"><a href="#カテゴリー">カテゴリー</a></li>
-    <li class="toc-level-3"><a href="#カテゴリー管理の入口">カテゴリー管理の入口</a></li>
-    <li class="toc-level-3"><a href="#カテゴリーを編集する">カテゴリーを編集する</a></li>
-    <li class="toc-level-3"><a href="#カテゴリーを表示または非表示にする">カテゴリーを表示または非表示にする</a></li>
-    <li class="toc-level-3"><a href="#カテゴリーアイコン">カテゴリーアイコン</a></li>
-    <li class="toc-level-3"><a href="#多通貨">多通貨</a></li>
-    <li class="toc-level-3"><a href="#為替レート">為替レート</a></li>
-    <li class="toc-level-2"><a href="#4-統計と予算">4. 統計と予算</a></li>
-    <li class="toc-level-3"><a href="#統計ページ">統計ページ</a></li>
-    <li class="toc-level-3"><a href="#期間">期間</a></li>
-    <li class="toc-level-3"><a href="#カテゴリー統計">カテゴリー統計</a></li>
-    <li class="toc-level-3"><a href="#推移グラフ">推移グラフ</a></li>
-    <li class="toc-level-3"><a href="#月度予算">月度予算</a></li>
-    <li class="toc-level-3"><a href="#今日の残り目安">今日の残り目安</a></li>
-    <li class="toc-level-3"><a href="#カテゴリー予算">カテゴリー予算</a></li>
-    <li class="toc-level-2"><a href="#5-気分">5. 気分</a></li>
-    <li class="toc-level-3"><a href="#気分記録とは">気分記録とは</a></li>
-    <li class="toc-level-3"><a href="#気分を記録するとよい場面">気分を記録するとよい場面</a></li>
-    <li class="toc-level-3"><a href="#気分統計">気分統計</a></li>
-    <li class="toc-level-3"><a href="#気分アイコン">気分アイコン</a></li>
-    <li class="toc-level-2"><a href="#6-場所">6. 場所</a></li>
-    <li class="toc-level-3"><a href="#場所記録とは">場所記録とは</a></li>
-    <li class="toc-level-3"><a href="#場所を記録するとよい場面">場所を記録するとよい場面</a></li>
-    <li class="toc-level-3"><a href="#場所記録と位置情報の権限">場所記録と位置情報の権限</a></li>
-    <li class="toc-level-3"><a href="#場所統計">場所統計</a></li>
-    <li class="toc-level-3"><a href="#場所記録を削除する">場所記録を削除する</a></li>
-    <li class="toc-level-2"><a href="#7-読み込みと書き出し">7. 読み込みと書き出し</a></li>
-    <li class="toc-level-3"><a href="#完全バックアップ">完全バックアップ</a></li>
-    <li class="toc-level-2"><a href="#バックアップから復元">バックアップから復元</a></li>
-    <li class="toc-level-3"><a href="#表形式で書き出し">表形式で書き出し</a></li>
-    <li class="toc-level-3"><a href="#表形式で読み込み">表形式で読み込み</a></li>
-    <li class="toc-level-3"><a href="#表形式テンプレート">表形式テンプレート</a></li>
-    <li class="toc-level-3"><a href="#金額と種類">金額と種類</a></li>
-    <li class="toc-level-3"><a href="#日付形式">日付形式</a></li>
-    <li class="toc-level-2"><a href="#8-icloud-同期">8. iCloud 同期</a></li>
-    <li class="toc-level-3"><a href="#icloud-同期とは">iCloud 同期とは</a></li>
-    <li class="toc-level-3"><a href="#同期には時間がかかる場合があります">同期には時間がかかる場合があります</a></li>
-    <li class="toc-level-3"><a href="#空の帳簿ページ">空の帳簿ページ</a></li>
-    <li class="toc-level-3"><a href="#icloud-同期を使う前に確認すること">iCloud 同期を使う前に確認すること</a></li>
-    <li class="toc-level-3"><a href="#最近削除した項目は同期されません">最近削除した項目は同期されません</a></li>
-    <li class="toc-level-3"><a href="#同期が長時間更新されない場合">同期が長時間更新されない場合</a></li>
-    <li class="toc-level-2"><a href="#9-pro-と購入の復元">9. Pro と購入の復元</a></li>
-    <li class="toc-level-2"><a href="#pro-とは">Pro とは</a></li>
-    <li class="toc-level-2"><a href="#pro-に含まれる機能">Pro に含まれる機能</a></li>
-    <li class="toc-level-3"><a href="#無制限の容量">無制限の容量</a></li>
-    <li class="toc-level-3"><a href="#個人化された外観">個人化された外観</a></li>
-    <li class="toc-level-3"><a href="#深い統計">深い統計</a></li>
-    <li class="toc-level-2"><a href="#無料版に含まれる機能">無料版に含まれる機能</a></li>
-    <li class="toc-level-2"><a href="#pro-を購入する">Pro を購入する</a></li>
-    <li class="toc-level-2"><a href="#購入を復元する">購入を復元する</a></li>
-    <li class="toc-level-2"><a href="#購入に失敗した場合">購入に失敗した場合</a></li>
-    <li class="toc-level-2"><a href="#10-よくある質問">10. よくある質問</a></li>
-    <li class="toc-level-3"><a href="#q1-新しいデバイスにアプリを入れた後-以前の帳簿が見えないのはなぜですか">Q1：新しいデバイスにアプリを入れた後、以前の帳簿が見えないのはなぜですか？</a></li>
-    <li class="toc-level-3"><a href="#q2-表形式で書き出したファイルを完全バックアップとして使えますか">Q2：表形式で書き出したファイルを完全バックアップとして使えますか？</a></li>
-    <li class="toc-level-3"><a href="#q3-表形式で書き出したファイルを再度読み込めますか">Q3：表形式で書き出したファイルを再度読み込めますか？</a></li>
-    <li class="toc-level-3"><a href="#q4-統計の金額が入力した金額と違うのはなぜですか">Q4：統計の金額が入力した金額と違うのはなぜですか？</a></li>
-    <li class="toc-level-3"><a href="#q5-予算金額と支出金額が合わないのはなぜですか">Q5：予算金額と支出金額が合わないのはなぜですか？</a></li>
-    <li class="toc-level-3"><a href="#q6-記録を削除した後に復元できますか">Q6：記録を削除した後に復元できますか？</a></li>
-    <li class="toc-level-3"><a href="#q7-最近削除した項目は他のデバイスに同期されますか">Q7：最近削除した項目は他のデバイスに同期されますか？</a></li>
-    <li class="toc-level-3"><a href="#q8-entryo-は記帳データをアップロードしますか">Q8：Entryo は記帳データをアップロードしますか？</a></li>
-    <li class="toc-level-3"><a href="#q9-場所機能に位置情報の権限が必要なのはなぜですか">Q9：場所機能に位置情報の権限が必要なのはなぜですか？</a></li>
-    <li class="toc-level-3"><a href="#q10-pro-はサブスクリプションですか">Q10：Pro はサブスクリプションですか？</a></li>
-    <li class="toc-level-3"><a href="#q11-デバイスを変更したら-pro-を再購入する必要がありますか">Q11：デバイスを変更したら Pro を再購入する必要がありますか？</a></li>
-    <li class="toc-level-3"><a href="#q12-一部の機能入口が見つからないのはなぜですか">Q12：一部の機能入口が見つからないのはなぜですか？</a></li>
-    <li class="toc-level-3"><a href="#q13-日常統計に含めない-はいつ使うべきですか">Q13：「日常統計に含めない」はいつ使うべきですか？</a></li>
-    <li class="toc-level-3"><a href="#q14-サポートに連絡するには">Q14：サポートに連絡するには？</a></li>
-    <li class="toc-level-2"><a href="#バージョンについて">バージョンについて</a></li>
-  </ol>
-  </div>
-</details>
 <aside class="guide-toc" aria-label="目次">
   <p class="toc-title">目次</p>
   <ol>
@@ -187,7 +98,98 @@
     <article class="guide-content">
       <header class="guide-header">
         <div class="brand"><span class="logo-dot"></span><a href="../">Entryo</a></div>
-        <h1>Entryo 使い方ガイド</h1>
+        <div class="guide-title-row">
+          <h1>Entryo 使い方ガイド</h1>
+          <details class="mobile-toc">
+            <summary class="mobile-toc-toggle">目次</summary>
+            <div class="mobile-toc-panel">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li class="toc-level-2"><a href="#1-はじめに">1. はじめに</a></li>
+              <li class="toc-level-3"><a href="#帳簿を作成する">帳簿を作成する</a></li>
+              <li class="toc-level-3"><a href="#最初の記録を追加する">最初の記録を追加する</a></li>
+              <li class="toc-level-3"><a href="#帳簿を切り替える">帳簿を切り替える</a></li>
+              <li class="toc-level-3"><a href="#無料版と-pro">無料版と Pro</a></li>
+              <li class="toc-level-2"><a href="#2-記録">2. 記録</a></li>
+              <li class="toc-level-3"><a href="#記録を追加する">記録を追加する</a></li>
+              <li class="toc-level-3"><a href="#記録を編集する">記録を編集する</a></li>
+              <li class="toc-level-3"><a href="#記録を削除する">記録を削除する</a></li>
+              <li class="toc-level-3"><a href="#日常統計に含めない">日常統計に含めない</a></li>
+              <li class="toc-level-3"><a href="#クイック入力バー">クイック入力バー</a></li>
+              <li class="toc-level-2"><a href="#3-帳簿-カテゴリー-通貨">3. 帳簿、カテゴリー、通貨</a></li>
+              <li class="toc-level-3"><a href="#帳簿">帳簿</a></li>
+              <li class="toc-level-3"><a href="#帳簿設定">帳簿設定</a></li>
+              <li class="toc-level-3"><a href="#カテゴリー">カテゴリー</a></li>
+              <li class="toc-level-3"><a href="#カテゴリー管理の入口">カテゴリー管理の入口</a></li>
+              <li class="toc-level-3"><a href="#カテゴリーを編集する">カテゴリーを編集する</a></li>
+              <li class="toc-level-3"><a href="#カテゴリーを表示または非表示にする">カテゴリーを表示または非表示にする</a></li>
+              <li class="toc-level-3"><a href="#カテゴリーアイコン">カテゴリーアイコン</a></li>
+              <li class="toc-level-3"><a href="#多通貨">多通貨</a></li>
+              <li class="toc-level-3"><a href="#為替レート">為替レート</a></li>
+              <li class="toc-level-2"><a href="#4-統計と予算">4. 統計と予算</a></li>
+              <li class="toc-level-3"><a href="#統計ページ">統計ページ</a></li>
+              <li class="toc-level-3"><a href="#期間">期間</a></li>
+              <li class="toc-level-3"><a href="#カテゴリー統計">カテゴリー統計</a></li>
+              <li class="toc-level-3"><a href="#推移グラフ">推移グラフ</a></li>
+              <li class="toc-level-3"><a href="#月度予算">月度予算</a></li>
+              <li class="toc-level-3"><a href="#今日の残り目安">今日の残り目安</a></li>
+              <li class="toc-level-3"><a href="#カテゴリー予算">カテゴリー予算</a></li>
+              <li class="toc-level-2"><a href="#5-気分">5. 気分</a></li>
+              <li class="toc-level-3"><a href="#気分記録とは">気分記録とは</a></li>
+              <li class="toc-level-3"><a href="#気分を記録するとよい場面">気分を記録するとよい場面</a></li>
+              <li class="toc-level-3"><a href="#気分統計">気分統計</a></li>
+              <li class="toc-level-3"><a href="#気分アイコン">気分アイコン</a></li>
+              <li class="toc-level-2"><a href="#6-場所">6. 場所</a></li>
+              <li class="toc-level-3"><a href="#場所記録とは">場所記録とは</a></li>
+              <li class="toc-level-3"><a href="#場所を記録するとよい場面">場所を記録するとよい場面</a></li>
+              <li class="toc-level-3"><a href="#場所記録と位置情報の権限">場所記録と位置情報の権限</a></li>
+              <li class="toc-level-3"><a href="#場所統計">場所統計</a></li>
+              <li class="toc-level-3"><a href="#場所記録を削除する">場所記録を削除する</a></li>
+              <li class="toc-level-2"><a href="#7-読み込みと書き出し">7. 読み込みと書き出し</a></li>
+              <li class="toc-level-3"><a href="#完全バックアップ">完全バックアップ</a></li>
+              <li class="toc-level-2"><a href="#バックアップから復元">バックアップから復元</a></li>
+              <li class="toc-level-3"><a href="#表形式で書き出し">表形式で書き出し</a></li>
+              <li class="toc-level-3"><a href="#表形式で読み込み">表形式で読み込み</a></li>
+              <li class="toc-level-3"><a href="#表形式テンプレート">表形式テンプレート</a></li>
+              <li class="toc-level-3"><a href="#金額と種類">金額と種類</a></li>
+              <li class="toc-level-3"><a href="#日付形式">日付形式</a></li>
+              <li class="toc-level-2"><a href="#8-icloud-同期">8. iCloud 同期</a></li>
+              <li class="toc-level-3"><a href="#icloud-同期とは">iCloud 同期とは</a></li>
+              <li class="toc-level-3"><a href="#同期には時間がかかる場合があります">同期には時間がかかる場合があります</a></li>
+              <li class="toc-level-3"><a href="#空の帳簿ページ">空の帳簿ページ</a></li>
+              <li class="toc-level-3"><a href="#icloud-同期を使う前に確認すること">iCloud 同期を使う前に確認すること</a></li>
+              <li class="toc-level-3"><a href="#最近削除した項目は同期されません">最近削除した項目は同期されません</a></li>
+              <li class="toc-level-3"><a href="#同期が長時間更新されない場合">同期が長時間更新されない場合</a></li>
+              <li class="toc-level-2"><a href="#9-pro-と購入の復元">9. Pro と購入の復元</a></li>
+              <li class="toc-level-2"><a href="#pro-とは">Pro とは</a></li>
+              <li class="toc-level-2"><a href="#pro-に含まれる機能">Pro に含まれる機能</a></li>
+              <li class="toc-level-3"><a href="#無制限の容量">無制限の容量</a></li>
+              <li class="toc-level-3"><a href="#個人化された外観">個人化された外観</a></li>
+              <li class="toc-level-3"><a href="#深い統計">深い統計</a></li>
+              <li class="toc-level-2"><a href="#無料版に含まれる機能">無料版に含まれる機能</a></li>
+              <li class="toc-level-2"><a href="#pro-を購入する">Pro を購入する</a></li>
+              <li class="toc-level-2"><a href="#購入を復元する">購入を復元する</a></li>
+              <li class="toc-level-2"><a href="#購入に失敗した場合">購入に失敗した場合</a></li>
+              <li class="toc-level-2"><a href="#10-よくある質問">10. よくある質問</a></li>
+              <li class="toc-level-3"><a href="#q1-新しいデバイスにアプリを入れた後-以前の帳簿が見えないのはなぜですか">Q1：新しいデバイスにアプリを入れた後、以前の帳簿が見えないのはなぜですか？</a></li>
+              <li class="toc-level-3"><a href="#q2-表形式で書き出したファイルを完全バックアップとして使えますか">Q2：表形式で書き出したファイルを完全バックアップとして使えますか？</a></li>
+              <li class="toc-level-3"><a href="#q3-表形式で書き出したファイルを再度読み込めますか">Q3：表形式で書き出したファイルを再度読み込めますか？</a></li>
+              <li class="toc-level-3"><a href="#q4-統計の金額が入力した金額と違うのはなぜですか">Q4：統計の金額が入力した金額と違うのはなぜですか？</a></li>
+              <li class="toc-level-3"><a href="#q5-予算金額と支出金額が合わないのはなぜですか">Q5：予算金額と支出金額が合わないのはなぜですか？</a></li>
+              <li class="toc-level-3"><a href="#q6-記録を削除した後に復元できますか">Q6：記録を削除した後に復元できますか？</a></li>
+              <li class="toc-level-3"><a href="#q7-最近削除した項目は他のデバイスに同期されますか">Q7：最近削除した項目は他のデバイスに同期されますか？</a></li>
+              <li class="toc-level-3"><a href="#q8-entryo-は記帳データをアップロードしますか">Q8：Entryo は記帳データをアップロードしますか？</a></li>
+              <li class="toc-level-3"><a href="#q9-場所機能に位置情報の権限が必要なのはなぜですか">Q9：場所機能に位置情報の権限が必要なのはなぜですか？</a></li>
+              <li class="toc-level-3"><a href="#q10-pro-はサブスクリプションですか">Q10：Pro はサブスクリプションですか？</a></li>
+              <li class="toc-level-3"><a href="#q11-デバイスを変更したら-pro-を再購入する必要がありますか">Q11：デバイスを変更したら Pro を再購入する必要がありますか？</a></li>
+              <li class="toc-level-3"><a href="#q12-一部の機能入口が見つからないのはなぜですか">Q12：一部の機能入口が見つからないのはなぜですか？</a></li>
+              <li class="toc-level-3"><a href="#q13-日常統計に含めない-はいつ使うべきですか">Q13：「日常統計に含めない」はいつ使うべきですか？</a></li>
+              <li class="toc-level-3"><a href="#q14-サポートに連絡するには">Q14：サポートに連絡するには？</a></li>
+              <li class="toc-level-2"><a href="#バージョンについて">バージョンについて</a></li>
+            </ol>
+            </div>
+          </details>
+        </div>
         <nav class="page-actions" aria-label="ページナビゲーション">
           <a class="button-link" href="../privacy/ja.html">プライバシーポリシー</a>
           <a class="button-link" href="../support/ja.html">サポート</a>
@@ -822,6 +824,7 @@
       <footer><a href="../">ホームに戻る</a></footer>
     </article>
   </main>
+  <a class="back-to-top" href="#top" aria-label="トップへ戻る" title="トップへ戻る">↑</a>
   <script>
     document.querySelectorAll('.mobile-toc a').forEach(function(link) {
       link.addEventListener('click', function() {

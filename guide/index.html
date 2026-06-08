@@ -7,97 +7,8 @@
   <meta name="description" content="Entryo user guide">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="guide-page">
+<body class="guide-page" id="top">
   <main class="guide-shell">
-<details class="mobile-toc">
-  <summary class="mobile-toc-toggle">Contents</summary>
-  <div class="mobile-toc-panel">
-  <p class="toc-title">Contents</p>
-  <ol>
-    <li class="toc-level-2"><a href="#1-quick-start">1. Quick Start</a></li>
-    <li class="toc-level-3"><a href="#create-a-ledger">Create a Ledger</a></li>
-    <li class="toc-level-3"><a href="#record-your-first-entry">Record Your First Entry</a></li>
-    <li class="toc-level-3"><a href="#switch-ledgers">Switch Ledgers</a></li>
-    <li class="toc-level-3"><a href="#free-version-and-pro">Free Version and Pro</a></li>
-    <li class="toc-level-2"><a href="#2-entries">2. Entries</a></li>
-    <li class="toc-level-3"><a href="#add-an-entry">Add an Entry</a></li>
-    <li class="toc-level-3"><a href="#edit-an-entry">Edit an Entry</a></li>
-    <li class="toc-level-3"><a href="#delete-an-entry">Delete an Entry</a></li>
-    <li class="toc-level-3"><a href="#exclude-from-daily-stats">Exclude from daily stats</a></li>
-    <li class="toc-level-3"><a href="#quick-entry-bar">Quick Entry Bar</a></li>
-    <li class="toc-level-2"><a href="#3-ledgers-categories-and-currencies">3. Ledgers, Categories, and Currencies</a></li>
-    <li class="toc-level-3"><a href="#ledgers">Ledgers</a></li>
-    <li class="toc-level-3"><a href="#ledger-settings">Ledger Settings</a></li>
-    <li class="toc-level-3"><a href="#categories">Categories</a></li>
-    <li class="toc-level-3"><a href="#category-management">Category Management</a></li>
-    <li class="toc-level-3"><a href="#edit-a-category">Edit a Category</a></li>
-    <li class="toc-level-3"><a href="#show-or-hide-categories">Show or Hide Categories</a></li>
-    <li class="toc-level-3"><a href="#category-icons">Category Icons</a></li>
-    <li class="toc-level-3"><a href="#multiple-currencies">Multiple Currencies</a></li>
-    <li class="toc-level-3"><a href="#exchange-rates">Exchange Rates</a></li>
-    <li class="toc-level-2"><a href="#4-statistics-and-budgets">4. Statistics and Budgets</a></li>
-    <li class="toc-level-3"><a href="#statistics-page">Statistics Page</a></li>
-    <li class="toc-level-3"><a href="#time-range">Time Range</a></li>
-    <li class="toc-level-3"><a href="#category-statistics">Category Statistics</a></li>
-    <li class="toc-level-3"><a href="#trend-chart">Trend Chart</a></li>
-    <li class="toc-level-3"><a href="#monthly-budget">Monthly Budget</a></li>
-    <li class="toc-level-3"><a href="#available-today">Available Today</a></li>
-    <li class="toc-level-3"><a href="#category-budgets">Category Budgets</a></li>
-    <li class="toc-level-2"><a href="#5-mood">5. Mood</a></li>
-    <li class="toc-level-3"><a href="#what-are-mood-records">What Are Mood Records?</a></li>
-    <li class="toc-level-3"><a href="#when-to-record-moods">When to Record Moods</a></li>
-    <li class="toc-level-3"><a href="#mood-statistics">Mood Statistics</a></li>
-    <li class="toc-level-3"><a href="#mood-icons">Mood Icons</a></li>
-    <li class="toc-level-2"><a href="#6-location">6. Location</a></li>
-    <li class="toc-level-3"><a href="#what-are-location-records">What Are Location Records?</a></li>
-    <li class="toc-level-3"><a href="#when-to-record-locations">When to Record Locations</a></li>
-    <li class="toc-level-3"><a href="#location-records-and-location-permission">Location Records and Location Permission</a></li>
-    <li class="toc-level-3"><a href="#location-statistics">Location Statistics</a></li>
-    <li class="toc-level-3"><a href="#delete-location-records">Delete Location Records</a></li>
-    <li class="toc-level-2"><a href="#7-import-and-export">7. Import and Export</a></li>
-    <li class="toc-level-3"><a href="#full-backup">Full Backup</a></li>
-    <li class="toc-level-2"><a href="#restore-from-backup">Restore from Backup</a></li>
-    <li class="toc-level-3"><a href="#spreadsheet-export">Spreadsheet Export</a></li>
-    <li class="toc-level-3"><a href="#spreadsheet-import">Spreadsheet Import</a></li>
-    <li class="toc-level-3"><a href="#spreadsheet-template-format">Spreadsheet Template Format</a></li>
-    <li class="toc-level-3"><a href="#amount-and-type">Amount and Type</a></li>
-    <li class="toc-level-3"><a href="#date-format">Date Format</a></li>
-    <li class="toc-level-2"><a href="#8-icloud-sync">8. iCloud Sync</a></li>
-    <li class="toc-level-3"><a href="#what-is-icloud-sync">What Is iCloud Sync?</a></li>
-    <li class="toc-level-3"><a href="#sync-may-take-time">Sync May Take Time</a></li>
-    <li class="toc-level-3"><a href="#empty-ledger-page">Empty Ledger Page</a></li>
-    <li class="toc-level-3"><a href="#before-using-icloud-sync">Before Using iCloud Sync</a></li>
-    <li class="toc-level-3"><a href="#recently-deleted-does-not-sync">Recently Deleted Does Not Sync</a></li>
-    <li class="toc-level-3"><a href="#when-sync-has-not-updated-for-a-long-time">When Sync Has Not Updated for a Long Time</a></li>
-    <li class="toc-level-2"><a href="#9-pro-and-restore-purchase">9. Pro and Restore Purchase</a></li>
-    <li class="toc-level-2"><a href="#what-is-pro">What Is Pro?</a></li>
-    <li class="toc-level-2"><a href="#what-does-pro-include">What Does Pro Include?</a></li>
-    <li class="toc-level-3"><a href="#unlimited-capacity">Unlimited Capacity</a></li>
-    <li class="toc-level-3"><a href="#personalized-appearance">Personalized Appearance</a></li>
-    <li class="toc-level-3"><a href="#deeper-statistics">Deeper Statistics</a></li>
-    <li class="toc-level-2"><a href="#what-is-included-in-the-free-version">What Is Included in the Free Version?</a></li>
-    <li class="toc-level-2"><a href="#purchase-pro">Purchase Pro</a></li>
-    <li class="toc-level-2"><a href="#restore-purchase">Restore Purchase</a></li>
-    <li class="toc-level-2"><a href="#purchase-failed">Purchase Failed</a></li>
-    <li class="toc-level-2"><a href="#10-faq">10. FAQ</a></li>
-    <li class="toc-level-3"><a href="#q1-why-do-i-not-see-my-previous-ledgers-after-installing-the-app-on-a-new-device">Q1: Why do I not see my previous ledgers after installing the app on a new device?</a></li>
-    <li class="toc-level-3"><a href="#q2-can-spreadsheet-export-be-used-as-a-full-backup">Q2: Can Spreadsheet Export be used as a Full Backup?</a></li>
-    <li class="toc-level-3"><a href="#q3-can-exported-spreadsheet-files-be-imported-again">Q3: Can exported spreadsheet files be imported again?</a></li>
-    <li class="toc-level-3"><a href="#q4-why-is-the-amount-in-statistics-different-from-the-amount-i-entered">Q4: Why is the amount in statistics different from the amount I entered?</a></li>
-    <li class="toc-level-3"><a href="#q5-why-does-the-budget-amount-not-match-the-expense-amount">Q5: Why does the budget amount not match the expense amount?</a></li>
-    <li class="toc-level-3"><a href="#q6-can-i-restore-an-entry-after-deleting-it">Q6: Can I restore an entry after deleting it?</a></li>
-    <li class="toc-level-3"><a href="#q7-does-recently-deleted-sync-to-other-devices">Q7: Does Recently Deleted sync to other devices?</a></li>
-    <li class="toc-level-3"><a href="#q8-does-entryo-upload-my-accounting-data">Q8: Does Entryo upload my accounting data?</a></li>
-    <li class="toc-level-3"><a href="#q9-why-does-the-location-feature-need-location-permission">Q9: Why does the location feature need location permission?</a></li>
-    <li class="toc-level-3"><a href="#q10-is-pro-a-subscription">Q10: Is Pro a subscription?</a></li>
-    <li class="toc-level-3"><a href="#q11-do-i-need-to-purchase-pro-again-after-switching-devices">Q11: Do I need to purchase Pro again after switching devices?</a></li>
-    <li class="toc-level-3"><a href="#q12-why-can-i-not-find-some-feature-entrances">Q12: Why can I not find some feature entrances?</a></li>
-    <li class="toc-level-3"><a href="#q13-when-should-i-use-exclude-from-daily-stats">Q13: When should I use “Exclude from daily stats”?</a></li>
-    <li class="toc-level-3"><a href="#q14-how-do-i-contact-support">Q14: How do I contact support?</a></li>
-    <li class="toc-level-2"><a href="#version-notes">Version Notes</a></li>
-  </ol>
-  </div>
-</details>
 <aside class="guide-toc" aria-label="Contents">
   <p class="toc-title">Contents</p>
   <ol>
@@ -187,7 +98,98 @@
     <article class="guide-content">
       <header class="guide-header">
         <div class="brand"><span class="logo-dot"></span><a href="../">Entryo</a></div>
-        <h1>Entryo User Guide</h1>
+        <div class="guide-title-row">
+          <h1>Entryo User Guide</h1>
+          <details class="mobile-toc">
+            <summary class="mobile-toc-toggle">Contents</summary>
+            <div class="mobile-toc-panel">
+            <p class="toc-title">Contents</p>
+            <ol>
+              <li class="toc-level-2"><a href="#1-quick-start">1. Quick Start</a></li>
+              <li class="toc-level-3"><a href="#create-a-ledger">Create a Ledger</a></li>
+              <li class="toc-level-3"><a href="#record-your-first-entry">Record Your First Entry</a></li>
+              <li class="toc-level-3"><a href="#switch-ledgers">Switch Ledgers</a></li>
+              <li class="toc-level-3"><a href="#free-version-and-pro">Free Version and Pro</a></li>
+              <li class="toc-level-2"><a href="#2-entries">2. Entries</a></li>
+              <li class="toc-level-3"><a href="#add-an-entry">Add an Entry</a></li>
+              <li class="toc-level-3"><a href="#edit-an-entry">Edit an Entry</a></li>
+              <li class="toc-level-3"><a href="#delete-an-entry">Delete an Entry</a></li>
+              <li class="toc-level-3"><a href="#exclude-from-daily-stats">Exclude from daily stats</a></li>
+              <li class="toc-level-3"><a href="#quick-entry-bar">Quick Entry Bar</a></li>
+              <li class="toc-level-2"><a href="#3-ledgers-categories-and-currencies">3. Ledgers, Categories, and Currencies</a></li>
+              <li class="toc-level-3"><a href="#ledgers">Ledgers</a></li>
+              <li class="toc-level-3"><a href="#ledger-settings">Ledger Settings</a></li>
+              <li class="toc-level-3"><a href="#categories">Categories</a></li>
+              <li class="toc-level-3"><a href="#category-management">Category Management</a></li>
+              <li class="toc-level-3"><a href="#edit-a-category">Edit a Category</a></li>
+              <li class="toc-level-3"><a href="#show-or-hide-categories">Show or Hide Categories</a></li>
+              <li class="toc-level-3"><a href="#category-icons">Category Icons</a></li>
+              <li class="toc-level-3"><a href="#multiple-currencies">Multiple Currencies</a></li>
+              <li class="toc-level-3"><a href="#exchange-rates">Exchange Rates</a></li>
+              <li class="toc-level-2"><a href="#4-statistics-and-budgets">4. Statistics and Budgets</a></li>
+              <li class="toc-level-3"><a href="#statistics-page">Statistics Page</a></li>
+              <li class="toc-level-3"><a href="#time-range">Time Range</a></li>
+              <li class="toc-level-3"><a href="#category-statistics">Category Statistics</a></li>
+              <li class="toc-level-3"><a href="#trend-chart">Trend Chart</a></li>
+              <li class="toc-level-3"><a href="#monthly-budget">Monthly Budget</a></li>
+              <li class="toc-level-3"><a href="#available-today">Available Today</a></li>
+              <li class="toc-level-3"><a href="#category-budgets">Category Budgets</a></li>
+              <li class="toc-level-2"><a href="#5-mood">5. Mood</a></li>
+              <li class="toc-level-3"><a href="#what-are-mood-records">What Are Mood Records?</a></li>
+              <li class="toc-level-3"><a href="#when-to-record-moods">When to Record Moods</a></li>
+              <li class="toc-level-3"><a href="#mood-statistics">Mood Statistics</a></li>
+              <li class="toc-level-3"><a href="#mood-icons">Mood Icons</a></li>
+              <li class="toc-level-2"><a href="#6-location">6. Location</a></li>
+              <li class="toc-level-3"><a href="#what-are-location-records">What Are Location Records?</a></li>
+              <li class="toc-level-3"><a href="#when-to-record-locations">When to Record Locations</a></li>
+              <li class="toc-level-3"><a href="#location-records-and-location-permission">Location Records and Location Permission</a></li>
+              <li class="toc-level-3"><a href="#location-statistics">Location Statistics</a></li>
+              <li class="toc-level-3"><a href="#delete-location-records">Delete Location Records</a></li>
+              <li class="toc-level-2"><a href="#7-import-and-export">7. Import and Export</a></li>
+              <li class="toc-level-3"><a href="#full-backup">Full Backup</a></li>
+              <li class="toc-level-2"><a href="#restore-from-backup">Restore from Backup</a></li>
+              <li class="toc-level-3"><a href="#spreadsheet-export">Spreadsheet Export</a></li>
+              <li class="toc-level-3"><a href="#spreadsheet-import">Spreadsheet Import</a></li>
+              <li class="toc-level-3"><a href="#spreadsheet-template-format">Spreadsheet Template Format</a></li>
+              <li class="toc-level-3"><a href="#amount-and-type">Amount and Type</a></li>
+              <li class="toc-level-3"><a href="#date-format">Date Format</a></li>
+              <li class="toc-level-2"><a href="#8-icloud-sync">8. iCloud Sync</a></li>
+              <li class="toc-level-3"><a href="#what-is-icloud-sync">What Is iCloud Sync?</a></li>
+              <li class="toc-level-3"><a href="#sync-may-take-time">Sync May Take Time</a></li>
+              <li class="toc-level-3"><a href="#empty-ledger-page">Empty Ledger Page</a></li>
+              <li class="toc-level-3"><a href="#before-using-icloud-sync">Before Using iCloud Sync</a></li>
+              <li class="toc-level-3"><a href="#recently-deleted-does-not-sync">Recently Deleted Does Not Sync</a></li>
+              <li class="toc-level-3"><a href="#when-sync-has-not-updated-for-a-long-time">When Sync Has Not Updated for a Long Time</a></li>
+              <li class="toc-level-2"><a href="#9-pro-and-restore-purchase">9. Pro and Restore Purchase</a></li>
+              <li class="toc-level-2"><a href="#what-is-pro">What Is Pro?</a></li>
+              <li class="toc-level-2"><a href="#what-does-pro-include">What Does Pro Include?</a></li>
+              <li class="toc-level-3"><a href="#unlimited-capacity">Unlimited Capacity</a></li>
+              <li class="toc-level-3"><a href="#personalized-appearance">Personalized Appearance</a></li>
+              <li class="toc-level-3"><a href="#deeper-statistics">Deeper Statistics</a></li>
+              <li class="toc-level-2"><a href="#what-is-included-in-the-free-version">What Is Included in the Free Version?</a></li>
+              <li class="toc-level-2"><a href="#purchase-pro">Purchase Pro</a></li>
+              <li class="toc-level-2"><a href="#restore-purchase">Restore Purchase</a></li>
+              <li class="toc-level-2"><a href="#purchase-failed">Purchase Failed</a></li>
+              <li class="toc-level-2"><a href="#10-faq">10. FAQ</a></li>
+              <li class="toc-level-3"><a href="#q1-why-do-i-not-see-my-previous-ledgers-after-installing-the-app-on-a-new-device">Q1: Why do I not see my previous ledgers after installing the app on a new device?</a></li>
+              <li class="toc-level-3"><a href="#q2-can-spreadsheet-export-be-used-as-a-full-backup">Q2: Can Spreadsheet Export be used as a Full Backup?</a></li>
+              <li class="toc-level-3"><a href="#q3-can-exported-spreadsheet-files-be-imported-again">Q3: Can exported spreadsheet files be imported again?</a></li>
+              <li class="toc-level-3"><a href="#q4-why-is-the-amount-in-statistics-different-from-the-amount-i-entered">Q4: Why is the amount in statistics different from the amount I entered?</a></li>
+              <li class="toc-level-3"><a href="#q5-why-does-the-budget-amount-not-match-the-expense-amount">Q5: Why does the budget amount not match the expense amount?</a></li>
+              <li class="toc-level-3"><a href="#q6-can-i-restore-an-entry-after-deleting-it">Q6: Can I restore an entry after deleting it?</a></li>
+              <li class="toc-level-3"><a href="#q7-does-recently-deleted-sync-to-other-devices">Q7: Does Recently Deleted sync to other devices?</a></li>
+              <li class="toc-level-3"><a href="#q8-does-entryo-upload-my-accounting-data">Q8: Does Entryo upload my accounting data?</a></li>
+              <li class="toc-level-3"><a href="#q9-why-does-the-location-feature-need-location-permission">Q9: Why does the location feature need location permission?</a></li>
+              <li class="toc-level-3"><a href="#q10-is-pro-a-subscription">Q10: Is Pro a subscription?</a></li>
+              <li class="toc-level-3"><a href="#q11-do-i-need-to-purchase-pro-again-after-switching-devices">Q11: Do I need to purchase Pro again after switching devices?</a></li>
+              <li class="toc-level-3"><a href="#q12-why-can-i-not-find-some-feature-entrances">Q12: Why can I not find some feature entrances?</a></li>
+              <li class="toc-level-3"><a href="#q13-when-should-i-use-exclude-from-daily-stats">Q13: When should I use “Exclude from daily stats”?</a></li>
+              <li class="toc-level-3"><a href="#q14-how-do-i-contact-support">Q14: How do I contact support?</a></li>
+              <li class="toc-level-2"><a href="#version-notes">Version Notes</a></li>
+            </ol>
+            </div>
+          </details>
+        </div>
         <nav class="page-actions" aria-label="Page navigation">
           <a class="button-link" href="../privacy/">Privacy Policy</a>
           <a class="button-link" href="../support/">Support</a>
@@ -822,6 +824,7 @@
       <footer><a href="../">Back to Home</a></footer>
     </article>
   </main>
+  <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
   <script>
     document.querySelectorAll('.mobile-toc a').forEach(function(link) {
       link.addEventListener('click', function() {
