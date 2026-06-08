@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entryo User Guide</title>
+  <meta name="description" content="Entryo user guide">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="guide-page">
+  <main class="guide-shell">
+<aside class="guide-toc" aria-label="Contents">
+  <p class="toc-title">Contents</p>
+  <ol>
+    <li class="toc-level-2"><a href="#1-quick-start">1. Quick Start</a></li>
+    <li class="toc-level-3"><a href="#create-a-ledger">Create a Ledger</a></li>
+    <li class="toc-level-3"><a href="#record-your-first-entry">Record Your First Entry</a></li>
+    <li class="toc-level-3"><a href="#switch-ledgers">Switch Ledgers</a></li>
+    <li class="toc-level-3"><a href="#free-version-and-pro">Free Version and Pro</a></li>
+    <li class="toc-level-2"><a href="#2-entries">2. Entries</a></li>
+    <li class="toc-level-3"><a href="#add-an-entry">Add an Entry</a></li>
+    <li class="toc-level-3"><a href="#edit-an-entry">Edit an Entry</a></li>
+    <li class="toc-level-3"><a href="#delete-an-entry">Delete an Entry</a></li>
+    <li class="toc-level-3"><a href="#exclude-from-daily-stats">Exclude from daily stats</a></li>
+    <li class="toc-level-3"><a href="#quick-entry-bar">Quick Entry Bar</a></li>
+    <li class="toc-level-2"><a href="#3-ledgers-categories-and-currencies">3. Ledgers, Categories, and Currencies</a></li>
+    <li class="toc-level-3"><a href="#ledgers">Ledgers</a></li>
+    <li class="toc-level-3"><a href="#ledger-settings">Ledger Settings</a></li>
+    <li class="toc-level-3"><a href="#categories">Categories</a></li>
+    <li class="toc-level-3"><a href="#category-management">Category Management</a></li>
+    <li class="toc-level-3"><a href="#edit-a-category">Edit a Category</a></li>
+    <li class="toc-level-3"><a href="#show-or-hide-categories">Show or Hide Categories</a></li>
+    <li class="toc-level-3"><a href="#category-icons">Category Icons</a></li>
+    <li class="toc-level-3"><a href="#multiple-currencies">Multiple Currencies</a></li>
+    <li class="toc-level-3"><a href="#exchange-rates">Exchange Rates</a></li>
+    <li class="toc-level-2"><a href="#4-statistics-and-budgets">4. Statistics and Budgets</a></li>
+    <li class="toc-level-3"><a href="#statistics-page">Statistics Page</a></li>
+    <li class="toc-level-3"><a href="#time-range">Time Range</a></li>
+    <li class="toc-level-3"><a href="#category-statistics">Category Statistics</a></li>
+    <li class="toc-level-3"><a href="#trend-chart">Trend Chart</a></li>
+    <li class="toc-level-3"><a href="#monthly-budget">Monthly Budget</a></li>
+    <li class="toc-level-3"><a href="#available-today">Available Today</a></li>
+    <li class="toc-level-3"><a href="#category-budgets">Category Budgets</a></li>
+    <li class="toc-level-2"><a href="#5-mood">5. Mood</a></li>
+    <li class="toc-level-3"><a href="#what-are-mood-records">What Are Mood Records?</a></li>
+    <li class="toc-level-3"><a href="#when-to-record-moods">When to Record Moods</a></li>
+    <li class="toc-level-3"><a href="#mood-statistics">Mood Statistics</a></li>
+    <li class="toc-level-3"><a href="#mood-icons">Mood Icons</a></li>
+    <li class="toc-level-2"><a href="#6-location">6. Location</a></li>
+    <li class="toc-level-3"><a href="#what-are-location-records">What Are Location Records?</a></li>
+    <li class="toc-level-3"><a href="#when-to-record-locations">When to Record Locations</a></li>
+    <li class="toc-level-3"><a href="#location-records-and-location-permission">Location Records and Location Permission</a></li>
+    <li class="toc-level-3"><a href="#location-statistics">Location Statistics</a></li>
+    <li class="toc-level-3"><a href="#delete-location-records">Delete Location Records</a></li>
+    <li class="toc-level-2"><a href="#7-import-and-export">7. Import and Export</a></li>
+    <li class="toc-level-3"><a href="#full-backup">Full Backup</a></li>
+    <li class="toc-level-2"><a href="#restore-from-backup">Restore from Backup</a></li>
+    <li class="toc-level-3"><a href="#spreadsheet-export">Spreadsheet Export</a></li>
+    <li class="toc-level-3"><a href="#spreadsheet-import">Spreadsheet Import</a></li>
+    <li class="toc-level-3"><a href="#spreadsheet-template-format">Spreadsheet Template Format</a></li>
+    <li class="toc-level-3"><a href="#amount-and-type">Amount and Type</a></li>
+    <li class="toc-level-3"><a href="#date-format">Date Format</a></li>
+    <li class="toc-level-2"><a href="#8-icloud-sync">8. iCloud Sync</a></li>
+    <li class="toc-level-3"><a href="#what-is-icloud-sync">What Is iCloud Sync?</a></li>
+    <li class="toc-level-3"><a href="#sync-may-take-time">Sync May Take Time</a></li>
+    <li class="toc-level-3"><a href="#empty-ledger-page">Empty Ledger Page</a></li>
+    <li class="toc-level-3"><a href="#before-using-icloud-sync">Before Using iCloud Sync</a></li>
+    <li class="toc-level-3"><a href="#recently-deleted-does-not-sync">Recently Deleted Does Not Sync</a></li>
+    <li class="toc-level-3"><a href="#when-sync-has-not-updated-for-a-long-time">When Sync Has Not Updated for a Long Time</a></li>
+    <li class="toc-level-2"><a href="#9-pro-and-restore-purchase">9. Pro and Restore Purchase</a></li>
+    <li class="toc-level-2"><a href="#what-is-pro">What Is Pro?</a></li>
+    <li class="toc-level-2"><a href="#what-does-pro-include">What Does Pro Include?</a></li>
+    <li class="toc-level-3"><a href="#unlimited-capacity">Unlimited Capacity</a></li>
+    <li class="toc-level-3"><a href="#personalized-appearance">Personalized Appearance</a></li>
+    <li class="toc-level-3"><a href="#deeper-statistics">Deeper Statistics</a></li>
+    <li class="toc-level-2"><a href="#what-is-included-in-the-free-version">What Is Included in the Free Version?</a></li>
+    <li class="toc-level-2"><a href="#purchase-pro">Purchase Pro</a></li>
+    <li class="toc-level-2"><a href="#restore-purchase">Restore Purchase</a></li>
+    <li class="toc-level-2"><a href="#purchase-failed">Purchase Failed</a></li>
+    <li class="toc-level-2"><a href="#10-faq">10. FAQ</a></li>
+    <li class="toc-level-3"><a href="#q1-why-do-i-not-see-my-previous-ledgers-after-installing-the-app-on-a-new-device">Q1: Why do I not see my previous ledgers after installing the app on a new device?</a></li>
+    <li class="toc-level-3"><a href="#q2-can-spreadsheet-export-be-used-as-a-full-backup">Q2: Can Spreadsheet Export be used as a Full Backup?</a></li>
+    <li class="toc-level-3"><a href="#q3-can-exported-spreadsheet-files-be-imported-again">Q3: Can exported spreadsheet files be imported again?</a></li>
+    <li class="toc-level-3"><a href="#q4-why-is-the-amount-in-statistics-different-from-the-amount-i-entered">Q4: Why is the amount in statistics different from the amount I entered?</a></li>
+    <li class="toc-level-3"><a href="#q5-why-does-the-budget-amount-not-match-the-expense-amount">Q5: Why does the budget amount not match the expense amount?</a></li>
+    <li class="toc-level-3"><a href="#q6-can-i-restore-an-entry-after-deleting-it">Q6: Can I restore an entry after deleting it?</a></li>
+    <li class="toc-level-3"><a href="#q7-does-recently-deleted-sync-to-other-devices">Q7: Does Recently Deleted sync to other devices?</a></li>
+    <li class="toc-level-3"><a href="#q8-does-entryo-upload-my-accounting-data">Q8: Does Entryo upload my accounting data?</a></li>
+    <li class="toc-level-3"><a href="#q9-why-does-the-location-feature-need-location-permission">Q9: Why does the location feature need location permission?</a></li>
+    <li class="toc-level-3"><a href="#q10-is-pro-a-subscription">Q10: Is Pro a subscription?</a></li>
+    <li class="toc-level-3"><a href="#q11-do-i-need-to-purchase-pro-again-after-switching-devices">Q11: Do I need to purchase Pro again after switching devices?</a></li>
+    <li class="toc-level-3"><a href="#q12-why-can-i-not-find-some-feature-entrances">Q12: Why can I not find some feature entrances?</a></li>
+    <li class="toc-level-3"><a href="#q13-when-should-i-use-exclude-from-daily-stats">Q13: When should I use “Exclude from daily stats”?</a></li>
+    <li class="toc-level-3"><a href="#q14-how-do-i-contact-support">Q14: How do I contact support?</a></li>
+    <li class="toc-level-2"><a href="#version-notes">Version Notes</a></li>
+  </ol>
+</aside>
+    <article class="guide-content">
+      <header class="guide-header">
+        <div class="brand"><span class="logo-dot"></span><a href="../">Entryo</a></div>
+        <h1>Entryo User Guide</h1>
+        <nav class="page-actions" aria-label="Page navigation">
+          <a class="button-link" href="../privacy/">Privacy Policy</a>
+          <a class="button-link" href="../support/">Support</a>
+          <details class="language-menu">
+            <summary class="language-toggle">Language</summary>
+            <ul class="language-options">
+      <li><a href="./" aria-current="page">English</a></li>
+      <li><a href="./zh-Hans.html">简体中文</a></li>
+      <li><a href="./zh-Hant.html">繁體中文</a></li>
+      <li><a href="./ja.html">日本語</a></li>
+            </ul>
+          </details>
+        </nav>
+      </header>
+      <div class="guide-body">
+<p>Entryo is a simple personal accounting app that supports multiple ledgers, income and expense entries, category statistics, budgets, mood records, location records, import/export, and iCloud sync.</p>
+<p>This guide explains the main feature locations and common workflows so you can start using Entryo quickly.</p>
+<hr>
+<h2 id="1-quick-start">1. Quick Start</h2>
+<h3 id="create-a-ledger">Create a Ledger</h3>
+<p>When you open Entryo for the first time, you can create a new ledger. Ledgers help you separate different accounting scenarios, such as:</p>
+<ul>
+<li>Daily life</li>
+<li>Travel</li>
+<li>Pets</li>
+<li>Family expenses</li>
+<li>Side income</li>
+</ul>
+<p>When creating a ledger, you can set its name, default currency, ledger color, and other details.</p>
+<p>The default currency is used for statistics, budgets, and multi-currency conversion. After creating a ledger, you can still adjust some details in Ledger Settings.<br>To open Ledger Settings, go to the ledger list, swipe left on the ledger, then tap “Edit”.</p>
+<h3 id="record-your-first-entry">Record Your First Entry</h3>
+<p>After entering a ledger, tap the add button to record an entry.</p>
+<p>You can choose:</p>
+<ul>
+<li>Income or expense</li>
+<li>Amount</li>
+<li>Category</li>
+<li>Date</li>
+<li>Note</li>
+<li>Mood</li>
+<li>Location</li>
+<li>Whether to exclude the entry from daily statistics</li>
+</ul>
+<p>You can complete an entry with only an amount and category. Other fields can be added when needed.</p>
+<h3 id="switch-ledgers">Switch Ledgers</h3>
+<p>If you have created multiple ledgers, you can switch between them in the ledger list. Each ledger has its own entries, categories, budgets, and settings.</p>
+<h3 id="free-version-and-pro">Free Version and Pro</h3>
+<p>Entryo’s basic features can be used for free. Pro is a one-time purchase, not a subscription.<br>You can continue using the basic accounting features for free, or upgrade to Pro to unlock more ledgers, more subscriptions, custom appearance, mood statistics, location statistics, category budgets, and more.</p>
+<p>For details about Pro features, purchase, and restoring purchases, see <a href="#9-pro-and-restore-purchase">Pro and Restore Purchase</a>.</p>
+<hr>
+<h2 id="2-entries">2. Entries</h2>
+<h3 id="add-an-entry">Add an Entry</h3>
+<p>On the ledger page, tap the add button to create an income or expense entry.</p>
+<p>An entry can include the following fields:</p>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody>
+<tr><td>Type</td><td>Income or expense</td></tr>
+<tr><td>Amount</td><td>The amount of this entry</td></tr>
+<tr><td>Category</td><td>For example, food, transportation, salary, etc.</td></tr>
+<tr><td>Date</td><td>When the entry occurred</td></tr>
+<tr><td>Note</td><td>Additional details, merchant name, purpose, etc.</td></tr>
+<tr><td>Currency</td><td>Used for entries in a non-default currency</td></tr>
+<tr><td>Mood</td><td>How you felt when the income or expense occurred</td></tr>
+<tr><td>Location</td><td>Where the entry occurred</td></tr>
+<tr><td>Exclude from daily stats</td><td>When enabled, this entry is excluded from related statistics but remains in the entry list</td></tr>
+</tbody></table></div>
+<h3 id="edit-an-entry">Edit an Entry</h3>
+<p>In the entry list, swipe left on an entry, then tap “Edit” to open the entry details and modify it.</p>
+<p>You can modify the amount, category, date, note, currency, mood, location, and whether the entry is excluded from daily statistics.</p>
+<p>After editing, related statistics will be recalculated based on the updated data.</p>
+<h3 id="delete-an-entry">Delete an Entry</h3>
+<p>In the entry list, swipe left on an entry, then tap “Delete” to delete it.</p>
+<p>After deleting, an undo prompt appears at the bottom of the page. If the deletion was a mistake, tap “Undo” immediately to restore the entry.</p>
+<p>If the undo prompt has disappeared, you can also go to “Top-right Menu” → “Recently Deleted” to restore or permanently delete entries.</p>
+<p>Note: Recently Deleted only keeps recently deleted records on the current device. It does not sync via iCloud and is not included in ledger backups.</p>
+<h3 id="exclude-from-daily-stats">Exclude from daily stats</h3>
+<p>If you do not want an entry to affect daily statistics, enable “Exclude from daily stats”.</p>
+<p>This is useful for:</p>
+<ul>
+<li>Expenses that will be reimbursed later</li>
+<li>Account adjustments</li>
+<li>Temporary records</li>
+<li>Special entries you do not want to include in daily spending analysis</li>
+</ul>
+<p>When enabled, the entry remains in the list but is excluded from related statistics. The exact scope follows what is shown in the app.</p>
+<p>You can set this option when adding or editing an entry. When enabled, the entry remains in the entry list but is excluded from related statistics.</p>
+<p>On the statistics page, you can also use a switch to show these entries when you need to view complete records.</p>
+<h3 id="quick-entry-bar">Quick Entry Bar</h3>
+<p>If the Quick Entry Bar is enabled, you can record common entries faster on the ledger page. It is useful for frequent small expenses or fixed categories.</p>
+<p>You can turn this feature on or off through “Settings” → “Quick entry bar”. When turned off, the ledger page shows the normal add button.</p>
+<hr>
+<h2 id="3-ledgers-categories-and-currencies">3. Ledgers, Categories, and Currencies</h2>
+<h3 id="ledgers">Ledgers</h3>
+<p>A ledger manages an independent set of entries, categories, and statistics. You can create different ledgers for different purposes.</p>
+<p>For example:</p>
+<ul>
+<li>Daily ledger</li>
+<li>Travel ledger</li>
+<li>Reimbursement ledger</li>
+<li>Pet ledger</li>
+</ul>
+<p>The free version can create 3 ledgers. After upgrading to Pro, the number of ledgers is unlimited.</p>
+<h3 id="ledger-settings">Ledger Settings</h3>
+<p>In Ledger Settings, you can manage options for the current ledger, including:</p>
+<ul>
+<li>Ledger name</li>
+<li>Default currency</li>
+<li>Ledger color</li>
+<li>Entry theme</li>
+<li>Ledger background</li>
+<li>Whether mood records are enabled</li>
+<li>Face ID / Touch ID lock</li>
+<li>Delete all location records</li>
+</ul>
+<p>To open Ledger Settings, go to the ledger list, swipe left on the ledger, then tap “Edit”.</p>
+<p>After changing ledger settings, tap the “Save” button in the top-right corner to save them.<br>If you tap “Cancel” or leave the page directly, unsaved changes will be reverted.</p>
+<p>Some settings require Pro. For example, ledger background is a Pro-only feature, and some entry themes also require Pro.</p>
+<p>If you turn off mood records, the mood option will no longer appear when adding or editing entries. Existing mood data will not be deleted automatically.</p>
+<p>“Delete All Location Records” only removes location information from entries in the current ledger. It does not delete the entries themselves.</p>
+<h3 id="categories">Categories</h3>
+<p>Categories are used to distinguish different types of income and expenses.</p>
+<p>Common expense categories:</p>
+<ul>
+<li>Food</li>
+<li>Transportation</li>
+<li>Shopping</li>
+<li>Entertainment</li>
+<li>Medical</li>
+<li>Pets</li>
+<li>Travel</li>
+</ul>
+<p>Common income categories:</p>
+<ul>
+<li>Salary</li>
+<li>Bonus</li>
+<li>Part-time work</li>
+<li>Investment</li>
+<li>Gift money</li>
+</ul>
+<p>You can adjust categories based on your own habits.</p>
+<h3 id="category-management">Category Management</h3>
+<p>You can open Category Management through “Top-right Menu” → “Category Management”.</p>
+<p>On the Category Management page, tap “+” in the top-right corner to add a category.</p>
+<h3 id="edit-a-category">Edit a Category</h3>
+<p>On the Category Management page, tap the category you want to modify.</p>
+<p>You can adjust the category name, icon, background color, and other details. Some customization options may require Pro.</p>
+<p>Default categories cannot be edited.</p>
+<h3 id="show-or-hide-categories">Show or Hide Categories</h3>
+<p>Categories can be shown or hidden.</p>
+<p>If you do not want to use a category for now, you can hide it. Hidden categories will not appear when selecting a category while adding or editing entries, but existing entries using that category will not be deleted.</p>
+<p>You can show the category again later in Category Management.</p>
+<h3 id="category-icons">Category Icons</h3>
+<p>Categories can have icons and background colors, making them easier to identify in the entry list and statistics.</p>
+<p>Basic icons and background colors can be set on the category editing page. Go to “Top-right Menu” → “Category Management”, then tap the category you want to edit to modify its appearance.</p>
+<p>If you upgrade to Pro, you can also set custom images for categories.</p>
+<h3 id="multiple-currencies">Multiple Currencies</h3>
+<p>Each ledger has a default currency. Statistics and budgets are calculated based on the default currency.</p>
+<p>If you record entries in another currency, Entryo converts them to the ledger’s default currency using the corresponding exchange rate before including them in statistics and budgets.</p>
+<p>If an exchange rate has not been set, you may need to manually enter or confirm it when recording a non-default currency entry.</p>
+<h3 id="exchange-rates">Exchange Rates</h3>
+<p>Exchange rates are used to convert non-default currencies to the ledger’s default currency.</p>
+<p>You can enter exchange rates in two ways:</p>
+<ol>
+<li>When adding or editing an entry, select a non-default currency and enter the exchange rate used by that entry.</li>
+<li>Go to “Top-right Menu” → “Exchange Rates, then tap “+” in the top-right corner to add an exchange rate.</li>
+</ol>
+<p>On the Exchange Rate Management page, you can tap an existing exchange rate to edit it, or swipe left on an exchange rate to delete it.</p>
+<p>Note: Editing an exchange rate in Exchange Rate Management does not affect entries that have already been created. Existing entries keep the exchange rate used at the time they were recorded.</p>
+<p>To change the exchange rate for a specific entry, go to the entry list, swipe right on the entry, tap “Edit”, then modify the exchange rate for that entry.</p>
+<p>Changing the exchange rate for one entry only affects that entry. It does not affect other exchange rates in Exchange Rate Management.</p>
+<hr>
+<h2 id="4-statistics-and-budgets">4. Statistics and Budgets</h2>
+<h3 id="statistics-page">Statistics Page</h3>
+<p>The statistics page is used to view income, expenses, and trends.</p>
+<p>On the ledger page, tap the pie chart icon in the top-right corner to open the statistics page.</p>
+<p>The statistics page includes:</p>
+<div class="table-wrap"><table><thead><tr><th>Content</th><th>Description</th></tr></thead><tbody>
+<tr><td>Income statistics</td><td>View income amount, trends, and categories</td></tr>
+<tr><td>Expense statistics</td><td>View expense amount, trends, and categories</td></tr>
+<tr><td>Category share</td><td>View how different categories contribute to income or expenses</td></tr>
+<tr><td>Trend chart</td><td>View income, expense, or mixed trend changes</td></tr>
+<tr><td>Net amount</td><td>View income minus expenses</td></tr>
+<tr><td>Previous month comparison</td><td>Compare the current month with the previous month</td></tr>
+<tr><td>Category details</td><td>View entries and statistics for a category</td></tr>
+</tbody></table></div>
+<p>You can view data for different periods based on the selected time range.</p>
+<h3 id="time-range">Time Range</h3>
+<p>Statistics can be viewed by different time ranges, such as:</p>
+<ul>
+<li>Today</li>
+<li>This month</li>
+<li>This year</li>
+<li>Custom time range</li>
+<li>All data</li>
+</ul>
+<p>Different charts may support different time ranges.</p>
+<h3 id="category-statistics">Category Statistics</h3>
+<p>Category statistics help you understand where most of your money goes, or where your income comes from.</p>
+<p>On the statistics page, tap a category to open the category details page and view detailed data and entries for that category.</p>
+<p>The category details page usually includes:</p>
+<ul>
+<li>Total income or expense for the selected time range</li>
+<li>Entry list for the category</li>
+<li>Custom time range filter</li>
+<li>Same-period income or expense comparison</li>
+<li>Trend chart</li>
+<li>Category budget progress, if a category budget has been set</li>
+</ul>
+<p>You can use a custom time range to view how a category changed during a specific period. For example, you can check food expenses during a trip, or shopping expenses over the last three months.</p>
+<p>If a category budget has been set, the category details page also shows budget usage to help you see whether spending is approaching or exceeding the budget.</p>
+<h3 id="trend-chart">Trend Chart</h3>
+<p>The trend chart shows changes in income or expenses. On the statistics page, swipe left on the pie chart page to switch to the trend chart.</p>
+<p>You can use the trend chart to observe:</p>
+<ul>
+<li>Which month had higher expenses</li>
+<li>Whether income is stable</li>
+<li>Whether spending is concentrated in certain periods</li>
+<li>How long-term habits change over time</li>
+</ul>
+<h3 id="monthly-budget">Monthly Budget</h3>
+<p>You can set a monthly budget to control monthly spending.</p>
+<p>Budgets are calculated using the ledger’s default currency. Entries in other currencies are converted using exchange rates and counted toward the budget.</p>
+<h3 id="available-today">Available Today</h3>
+<p>If a monthly budget is set, Entryo may show the amount available today.</p>
+<p>This value helps you understand whether current spending has exceeded the monthly progress.</p>
+<p>In general:</p>
+<pre><code>Available today = safe budget based on time progress - spending this month</code></pre>
+<p>If the available amount is negative, current spending has exceeded the budget level calculated by time progress.</p>
+<h3 id="category-budgets">Category Budgets</h3>
+<p>Pro users can set budgets for categories. Category budgets are useful for more detailed spending control, such as:</p>
+<ul>
+<li>Food budget</li>
+<li>Shopping budget</li>
+<li>Entertainment budget</li>
+<li>Pet budget</li>
+</ul>
+<p>You can go to “Statistics Page” → “Budget Settings” → “Open Budget Allocation” to set category budgets.</p>
+<p>Note: “Open Budget Allocation” is only visible to Pro users. If you have not upgraded to Pro, you can only set a monthly budget and cannot allocate budgets to individual categories.</p>
+<p>Category budgets help you identify which specific categories are exceeding expectations. After setting them, the category details page will also show budget usage for the corresponding category.</p>
+<hr>
+<h2 id="5-mood">5. Mood</h2>
+<h3 id="what-are-mood-records">What Are Mood Records?</h3>
+<p>Mood records let you record how you felt when an entry occurred. They can help you review the relationship between spending and emotions.</p>
+<p>Examples:</p>
+<ul>
+<li>Happy</li>
+<li>Worth it</li>
+<li>Impulsive</li>
+<li>Regretful</li>
+<li>Anxious</li>
+<li>Calm</li>
+<li>Looking forward</li>
+<li>Relaxed</li>
+</ul>
+<p>Mood is optional. You can record it only when needed.</p>
+<h3 id="when-to-record-moods">When to Record Moods</h3>
+<p>Mood records are useful when you want to:</p>
+<ul>
+<li>Understand which emotions make you more likely to spend</li>
+<li>Distinguish “worth it” spending from “regretful” spending</li>
+<li>Review your spending state during a certain period</li>
+<li>Record expenses with feelings, such as travel, gifts, or entertainment</li>
+</ul>
+<h3 id="mood-statistics">Mood Statistics</h3>
+<p>If the current ledger has mood records, the statistics page will show a mood card. Tap “View Mood Report” on the mood card to open the mood report page.</p>
+<p>Pro users can view complete mood statistics. Mood statistics can help you understand:</p>
+<ul>
+<li>Which moods appear more frequently</li>
+<li>Which moods are associated with higher spending</li>
+<li>Which purchases are more likely to lead to regret or satisfaction</li>
+</ul>
+<p>If there are no mood records, the statistics page may not show the mood card. You can add mood records when adding or editing entries.</p>
+<h3 id="mood-icons">Mood Icons</h3>
+<p>You can manage mood labels and icons through “Top-right Menu” → “Mood Tags”.</p>
+<p>On the Mood Labels page, you can pair mood icons with labels based on your own preferences.</p>
+<p>Basic mood icons can be used directly. If you upgrade to Pro, you can also use your own images as mood icons.</p>
+<hr>
+<h2 id="6-location">6. Location</h2>
+<h3 id="what-are-location-records">What Are Location Records?</h3>
+<p>Location records save where an entry occurred. For example:</p>
+<ul>
+<li>Restaurant</li>
+<li>Coffee shop</li>
+<li>Shopping mall</li>
+<li>Supermarket</li>
+<li>Travel location</li>
+</ul>
+<p>Location is optional. You can record it only when needed.</p>
+<h3 id="when-to-record-locations">When to Record Locations</h3>
+<p>Location records are useful when you want to:</p>
+<ul>
+<li>Know where you spend the most</li>
+<li>Review travel expenses</li>
+<li>Record frequently visited merchants</li>
+<li>Analyze spending habits across different areas</li>
+</ul>
+<h3 id="location-records-and-location-permission">Location Records and Location Permission</h3>
+<p>Entryo requests location permission only when you actively use your current location or enable entry location recording.</p>
+<p>You can turn location recording on or off through “Settings” → “Record Entry Location”. When turned off, new locations will no longer be recorded when adding or editing entries, but existing location data will not be affected.</p>
+<p>You can also turn off “Show place in entries”. When turned off, location information will not be shown on the entry page or category details page even if entries already have location data.</p>
+<p>To delete existing location data, open Ledger Settings: in the ledger list, swipe left on the ledger, tap “Edit”, then tap “Delete All Location Records” at the bottom of the page.</p>
+<p>Note: “Delete All Location Records” only removes location information from entries in the current ledger. It does not delete the entries themselves.</p>
+<p>Location information is only used to save locations to your entries. It is not used to track you.<br>For details about location data and privacy, see the <a href="../privacy/">Privacy Policy</a>.</p>
+<h3 id="location-statistics">Location Statistics</h3>
+<p>If the current ledger has location records, the statistics page will show a location card. Tap “View places and ranking” on the location card to open the location statistics page.</p>
+<p>Location records can be used for free, but complete location statistics require Pro.</p>
+<p>Location statistics help you understand spending from a spatial perspective and usually include:</p>
+<ul>
+<li>Map view</li>
+<li>Location spending ranking</li>
+<li>Entries related to locations</li>
+<li>Income and expense switching</li>
+<li>Amount and record count switching</li>
+</ul>
+<p>On the location statistics page, the map and ranking can work together. Tap a map marker or ranking item to view entries related to that location.</p>
+<p>If there are no location records, the statistics page may not show the location card. You can add location records when adding or editing entries.</p>
+<h3 id="delete-location-records">Delete Location Records</h3>
+<p>If you no longer want to keep location information, you can remove the location from a single entry or delete all location records in the current ledger.</p>
+<p>To remove the location from one entry, swipe right on the entry in the entry list, tap “Edit”, then choose “Remove Location” on the entry editing page.</p>
+<p>After removing the location, the entry itself remains, but its location information is deleted.</p>
+<p>To delete all location records in the current ledger, open Ledger Settings: in the ledger list, swipe left on the ledger, tap “Edit”, then tap “Delete All Location Records” at the bottom of the page.</p>
+<p>Note: “Delete All Location Records” only removes location information from entries in the current ledger. It does not delete the entries themselves.</p>
+<hr>
+<h2 id="7-import-and-export">7. Import and Export</h2>
+<p>Entryo supports Full Backup and Spreadsheet Import/Export. They are used for different purposes.</p>
+<h3 id="full-backup">Full Backup</h3>
+<p>Full Backup is suitable for ledger migration or restore.</p>
+<p>In the ledger list, swipe right on the ledger, tap “Export”, then choose “Full Backup”.</p>
+<p>A Full Backup preserves as much complete ledger data as possible, such as:</p>
+<ul>
+<li>Entries</li>
+<li>Categories</li>
+<li>Ledger settings</li>
+<li>Images</li>
+<li>Background</li>
+<li>Icons</li>
+<li>Subscriptions</li>
+<li>Other settings data</li>
+</ul>
+<p>Use Full Backup if you want to back up an entire ledger.</p>
+<h2 id="restore-from-backup">Restore from Backup</h2>
+<p>If you previously exported a ledger backup with “Full Backup”, you can import it again through “Restore from Backup”.</p>
+<p>Go to “Top-right Menu” → “Import” → “Restore from Backup” to select a backup file.</p>
+<p>Restore from Backup is suitable for:</p>
+<ul>
+<li>Restoring a previously exported ledger when you are not using iCloud sync</li>
+<li>Moving a ledger to another Apple ID or a device that does not use iCloud</li>
+<li>Restoring from a Full Backup when iCloud data is unavailable</li>
+<li>Restoring a ledger copy from a historical backup version</li>
+</ul>
+<p>If iCloud sync is enabled on the current device and your previous ledger data has already been synced to iCloud, Entryo may automatically restore ledgers from iCloud.<br>In this case, you usually do not need to use “Restore from Backup”.</p>
+<p>If you import the same ledger backup after iCloud has already restored it, the ledger list may show two ledgers with the same content. This does not affect the original data. You can keep the one you need and delete the extra ledger.</p>
+<p>Restore from Backup preserves as much complete ledger data from the backup file as possible, such as:</p>
+<ul>
+<li>Entries</li>
+<li>Categories</li>
+<li>Ledger settings</li>
+<li>Images</li>
+<li>Ledger background</li>
+<li>Category icons</li>
+<li>Entry themes</li>
+<li>Other app-specific data</li>
+</ul>
+<p>Note: Restore from Backup requires a Full Backup file exported by Entryo. Spreadsheet files cannot be used for full restore.</p>
+<p>If you only want to import entries in bulk, use “Spreadsheet Import”.<br>If you need to restore a complete ledger, use a backup file exported with “Full Backup” and import it through “Restore from Backup”.</p>
+<h3 id="spreadsheet-export">Spreadsheet Export</h3>
+<p>Spreadsheet Export is suitable for viewing, organizing, analyzing, or sharing entry data.</p>
+<p>In the ledger list, swipe right on the ledger, tap “Export”, then choose “Spreadsheet Export”.</p>
+<p>The exported CSV file can be opened in:</p>
+<ul>
+<li>Excel</li>
+<li>Numbers</li>
+<li>Google Sheets</li>
+<li>Other tools that support CSV</li>
+</ul>
+<p>Note: Spreadsheet Export is not a Full Backup.</p>
+<p>Spreadsheets usually only include entry fields, such as:</p>
+<ul>
+<li>Type</li>
+<li>Amount</li>
+<li>Currency</li>
+<li>Category</li>
+<li>Note</li>
+<li>Time</li>
+<li>Exchange rate</li>
+<li>Mood</li>
+<li>Location</li>
+<li>Whether excluded from statistics</li>
+</ul>
+<p>Spreadsheets do not include complete data such as images, themes, ledger settings, or category icons.</p>
+<h3 id="spreadsheet-import">Spreadsheet Import</h3>
+<p>You can use a CSV template to import entries in bulk.</p>
+<p>Go to “Top-right Menu” → “Import” → “Spreadsheet Import” to select a CSV file.</p>
+<p>Spreadsheet Import is useful for:</p>
+<ul>
+<li>Migrating entry records from other accounting tools</li>
+<li>Importing after organizing data in Excel or Numbers</li>
+<li>Adding historical entries in bulk</li>
+<li>Quickly importing many records</li>
+</ul>
+<p>Note: Spreadsheet Import only creates entry records based on the spreadsheet content. It does not restore complete ledger data like “Restore from Backup”.<br>Images, ledger settings, ledger background, entry themes, category icons, and similar data are not restored through Spreadsheet Import.</p>
+<p>If you need to migrate or restore a complete ledger, use a backup file exported with “Full Backup” and import it through “Restore from Backup”.</p>
+<h3 id="spreadsheet-template-format">Spreadsheet Template Format</h3>
+<p>Spreadsheet Import currently only supports CSV files. Use the spreadsheet template provided by Entryo and do not modify the headers arbitrarily.</p>
+<p>Go to “Top-right Menu” → “Import” → “Spreadsheet Import”, then tap “Download Spreadsheet Template” at the bottom of the page to get the template file.</p>
+<p>After downloading the template, fill in entry data according to the field descriptions in the template. The template indicates which fields are required and which are optional.</p>
+<p>After filling it in, return to the Spreadsheet Import page and select the CSV file to import it.</p>
+<h3 id="amount-and-type">Amount and Type</h3>
+<p>The spreadsheet template includes “Type” and “Amount” fields.</p>
+<p>“Type” is used to distinguish income from expense. Follow the template instructions and enter the income or expense text in the corresponding language, for example:</p>
+<ul>
+<li>English template: Income / Expense</li>
+</ul>
+<p>Enter positive numbers for “Amount”. Do not enter negative numbers.<br>Income or expense is determined by the “Type” field, not by plus or minus signs.</p>
+<h3 id="date-format">Date Format</h3>
+<p>The recommended fixed date format is:</p>
+<pre><code>yyyy-MM-dd HH:mm:ss</code></pre>
+<p>For example:</p>
+<pre><code>2026-06-08 14:30:00</code></pre>
+<p>Import may support several common date formats, but to avoid parsing errors, use the format shown in the template whenever possible.</p>
+<hr>
+<h2 id="8-icloud-sync">8. iCloud Sync</h2>
+<h3 id="what-is-icloud-sync">What Is iCloud Sync?</h3>
+<p>If you enable iCloud, devices under the same iCloud account can sync ledger data. In general, these devices need to be signed in with the same Apple ID.</p>
+<p>For example, you can record an entry on your iPhone and view it on an iPad signed in with the same Apple ID.</p>
+<h3 id="sync-may-take-time">Sync May Take Time</h3>
+<p>ICloud sync is not instant upload and download. After installing the app on a new device, switching devices, using a slow network, or when iCloud status changes, ledgers may not appear completely right away.</p>
+<p>If you previously used Entryo with iCloud sync enabled, but do not see data on a new device yet, wait for a while first. During sync, ledgers may appear gradually, or some ledgers may appear before others.</p>
+<p>You can also reopen the app later to check the sync result. Sync time depends on network status, iCloud status, and device state.</p>
+<h3 id="empty-ledger-page">Empty Ledger Page</h3>
+<p>If you open the app and see “No ledgers yet”, there are two possible cases:</p>
+<ol>
+<li>You are a new user and have not created a ledger yet.</li>
+<li>You previously used iCloud sync and data is still syncing.</li>
+</ol>
+<p>You can wait for a while, then check again after confirming your network and iCloud status.</p>
+<h3 id="before-using-icloud-sync">Before Using iCloud Sync</h3>
+<p>Please confirm:</p>
+<ul>
+<li>The current device is signed in to iCloud</li>
+<li>iCloud Drive is available</li>
+<li>Entryo is allowed to use iCloud</li>
+<li>Network connection is normal</li>
+<li>Multiple devices use the same Apple ID</li>
+</ul>
+<h3 id="recently-deleted-does-not-sync">Recently Deleted Does Not Sync</h3>
+<p>Recently Deleted only keeps records on the current device. It does not sync via iCloud and is not exported with ledger backups.</p>
+<p>This means:</p>
+<ul>
+<li>Entries deleted on device A may not appear in Recently Deleted on device B</li>
+<li>Recently Deleted is mainly for recovering accidental deletions on the current device</li>
+<li>Full Backup does not include records in Recently Deleted</li>
+</ul>
+<p>If you need to keep an accidentally deleted entry, restore it first, then create a Full Backup.</p>
+<h3 id="when-sync-has-not-updated-for-a-long-time">When Sync Has Not Updated for a Long Time</h3>
+<p>If you have waited for a while but ledgers still do not appear, or only some ledgers appear, check the following:</p>
+<ul>
+<li>Whether the current device is connected to the network</li>
+<li>Whether you are signed in with the correct Apple ID</li>
+<li>Whether iCloud Drive is enabled</li>
+<li>Whether Entryo is allowed to use iCloud</li>
+<li>Whether the device is in low power, weak network, or a system state that limits syncing</li>
+</ul>
+<p>You can also reopen the app later, or restart the device and check again.</p>
+<p>If you urgently need to use a ledger on the current device, you can export a “Full Backup” of that ledger from another device that already has the data, then import it on the current device through “Restore from Backup”.</p>
+<p>Note: If iCloud later syncs the same ledger back, the ledger list may show two ledgers with the same content. This does not affect the original data. You can keep the one you need and delete the extra ledger.</p>
+<p>Avoid repeatedly uninstalling and reinstalling the app. Uninstalling the app may clear local data, and syncing iCloud data back may also take time.</p>
+<hr>
+<h2 id="9-pro-and-restore-purchase">9. Pro and Restore Purchase</h2>
+<h2 id="what-is-pro">What Is Pro?</h2>
+<p>Pro unlocks the complete Entryo feature set. Pro is a one-time purchase, not a subscription.</p>
+<p>After purchase, Pro permanently unlocks the corresponding features, including more ledgers and subscriptions, custom appearance, mood statistics, location statistics, category budgets, and more. Purchases are handled by Apple. Entryo does not receive your payment card information.</p>
+<p>For details about data use and privacy, see the <a href="../privacy/">Privacy Policy</a>.</p>
+<h2 id="what-does-pro-include">What Does Pro Include?</h2>
+<p>Pro mainly includes the following features:</p>
+<h3 id="unlimited-capacity">Unlimited Capacity</h3>
+<p>Pro unlocks:</p>
+<ul>
+<li>Unlimited ledgers</li>
+<li>Unlimited subscriptions</li>
+</ul>
+<p>This is suitable for users who need to manage multiple ledgers or record many recurring income and expense items.</p>
+<h3 id="personalized-appearance">Personalized Appearance</h3>
+<p>Pro unlocks more personalization options, including:</p>
+<ul>
+<li>Custom mood icons</li>
+<li>Custom category icons</li>
+<li>Ledger background</li>
+<li>Pro entry themes</li>
+</ul>
+<p>These features make the ledger better fit your habits and visual preferences.</p>
+<h3 id="deeper-statistics">Deeper Statistics</h3>
+<p>Pro unlocks more statistics features, including:</p>
+<ul>
+<li>Mood statistics</li>
+<li>Map statistics</li>
+<li>Combined ledger statistics</li>
+<li>Category budgets</li>
+</ul>
+<p>These features are suitable for users who want to analyze income and expenses from more perspectives.</p>
+<h2 id="what-is-included-in-the-free-version">What Is Included in the Free Version?</h2>
+<p>The free version can be used long-term and includes basic Entryo accounting features, such as:</p>
+<ul>
+<li>Daily income and expense records</li>
+<li>3 ledgers</li>
+<li>3 subscriptions</li>
+<li>Category management</li>
+<li>Basic statistics</li>
+<li>Monthly budget</li>
+<li>Mood records</li>
+<li>Location records</li>
+<li>Import and export</li>
+<li>iCloud sync</li>
+<li>Recently Deleted</li>
+<li>Search</li>
+</ul>
+<p>The free version can record moods and locations, but complete mood statistics and location statistics require Pro.</p>
+<p>After upgrading to Pro, you can create unlimited ledgers and subscriptions, and unlock complete features such as ledger background, Pro entry themes, category budgets, mood statistics, and location statistics.</p>
+<h2 id="purchase-pro">Purchase Pro</h2>
+<p>Go to “Settings” → “Upgrade to Pro” to open the Pro page and purchase.</p>
+<p>The Pro page shows currently available purchase items, prices, and unlocked features. Prices may vary depending on region, currency, and App Store settings. Please refer to the price shown in the app.</p>
+<h2 id="restore-purchase">Restore Purchase</h2>
+<p>If you change devices, reinstall the app, or Pro is not restored automatically after purchase, you can restore it manually.</p>
+<p>Go to “Settings” → “Upgrade to Pro” to open the Pro page, then tap “Already purchased? Restore Purchase”.</p>
+<p>Restore Purchase requires the Apple ID used for the purchase. After a successful restore, Pro features will be unlocked again.</p>
+<h2 id="purchase-failed">Purchase Failed</h2>
+<p>If a purchase fails, please check:</p>
+<ul>
+<li>Network connection is normal</li>
+<li>App Store account is available</li>
+<li>Purchases are supported in the current region</li>
+<li>In-app purchases are not restricted by the system</li>
+<li>Try again later</li>
+</ul>
+<p>If the error persists, contact support through “Settings” → “Report an Issue”. When reporting, include the error code, screenshots, device model, iOS version, and app version to help with troubleshooting.</p>
+<hr>
+<h2 id="10-faq">10. FAQ</h2>
+<h3 id="q1-why-do-i-not-see-my-previous-ledgers-after-installing-the-app-on-a-new-device">Q1: Why do I not see my previous ledgers after installing the app on a new device?</h3>
+<p>ICloud sync may not have finished yet, or there may be no synced data under the current Apple ID.</p>
+<p>Please check:</p>
+<ul>
+<li>Whether you are signed in with the original Apple ID</li>
+<li>Whether iCloud Drive is enabled</li>
+<li>Whether the network is normal</li>
+<li>Whether Entryo is allowed to use iCloud</li>
+</ul>
+<p>Sync time depends on network status, iCloud status, and device state. After installing on a new device or switching devices, ledgers may appear gradually, or some ledgers may appear before others.</p>
+<p>For more details, see <a href="#sync-may-take-time">Sync May Take Time</a>.</p>
+<h3 id="q2-can-spreadsheet-export-be-used-as-a-full-backup">Q2: Can Spreadsheet Export be used as a Full Backup?</h3>
+<p>Not recommended.</p>
+<p>Spreadsheet Export is mainly for viewing, organizing, and analyzing entry data. It does not include complete information such as images, themes, ledger settings, or category icons.</p>
+<p>If you need to migrate or restore a complete ledger, use Full Backup.</p>
+<h3 id="q3-can-exported-spreadsheet-files-be-imported-again">Q3: Can exported spreadsheet files be imported again?</h3>
+<p>Yes. Spreadsheet files can be used to import entries again.</p>
+<p>However, re-importing only restores the entry fields contained in the spreadsheet. It does not restore complete ledger settings, images, themes, or other app-specific data.</p>
+<h3 id="q4-why-is-the-amount-in-statistics-different-from-the-amount-i-entered">Q4: Why is the amount in statistics different from the amount I entered?</h3>
+<p>Possible reasons include:</p>
+<ul>
+<li>You recorded entries in a non-default currency. Entryo converts them to the ledger’s default currency using exchange rates before including them in statistics.</li>
+<li>Some entries have “Exclude from daily stats” enabled, so they are not included in statistical amounts by default.</li>
+<li>The current time range, income/expense type, or category filter on the statistics page may differ, causing the displayed amount to differ from the amount in the entry list.</li>
+</ul>
+<p>You can check the entry’s currency, exchange rate, and “Exclude from daily stats” setting.</p>
+<p>If you need to view complete data including these entries, turn on “Show All Entries” on the statistics page.</p>
+<h3 id="q5-why-does-the-budget-amount-not-match-the-expense-amount">Q5: Why does the budget amount not match the expense amount?</h3>
+<p>Possible reasons include:</p>
+<ul>
+<li>Some entries use non-default currencies and are converted by exchange rates</li>
+<li>Some entries are excluded from daily statistics</li>
+<li>The current time range is different</li>
+<li>Category filters affect part of the statistics display</li>
+<li>Budgets are calculated in the ledger’s default currency</li>
+</ul>
+<p>Please refer to the explanation shown on the budget page in the app.</p>
+<h3 id="q6-can-i-restore-an-entry-after-deleting-it">Q6: Can I restore an entry after deleting it?</h3>
+<p>You can restore some deleted records in Recently Deleted.</p>
+<p>Note: Recently Deleted only keeps records on the current device, and the number of records retained is limited.</p>
+<p>If you need to keep data long-term, create Full Backups regularly.</p>
+<h3 id="q7-does-recently-deleted-sync-to-other-devices">Q7: Does Recently Deleted sync to other devices?</h3>
+<p>No.</p>
+<p>Recently Deleted only keeps deleted records on the current device and does not sync via iCloud.</p>
+<h3 id="q8-does-entryo-upload-my-accounting-data">Q8: Does Entryo upload my accounting data?</h3>
+<p>Your accounting data is stored locally. If iCloud sync is enabled, data syncs between devices through your personal iCloud account.</p>
+<p>Entryo does not read your iCloud data, and does not sell or share your personal data.</p>
+<p>For details about data use, iCloud sync, location permission, and Face ID / Touch ID, see the <a href="../privacy/">Privacy Policy</a>.</p>
+<h3 id="q9-why-does-the-location-feature-need-location-permission">Q9: Why does the location feature need location permission?</h3>
+<p>Entryo requests location permission only when you actively use your current location, record entry locations, or use location-related features.</p>
+<p>Location data is only used to save locations to corresponding entries. It is not used to track your location.</p>
+<p>For details about location permission and location data use, see the <a href="../privacy/">Privacy Policy</a>.</p>
+<h3 id="q10-is-pro-a-subscription">Q10: Is Pro a subscription?</h3>
+<p>No.</p>
+<p>Pro is a one-time purchase, not a monthly or yearly subscription. After purchase, it unlocks the complete Entryo feature set, including unlimited ledgers, unlimited subscriptions, personalized appearance, mood statistics, location statistics, and category budgets.</p>
+<h3 id="q11-do-i-need-to-purchase-pro-again-after-switching-devices">Q11: Do I need to purchase Pro again after switching devices?</h3>
+<p>No.</p>
+<p>As long as you use the same Apple ID used to purchase Pro, you can restore Pro through “Settings” → “Upgrade to Pro” → “Already purchased? Restore Purchase”.</p>
+<p>For more details, see <a href="#restore-purchase">Restore Purchase</a>.</p>
+<h3 id="q12-why-can-i-not-find-some-feature-entrances">Q12: Why can I not find some feature entrances?</h3>
+<p>Some features are shown depending on the current data state. For example:</p>
+<ul>
+<li>If there is no location data, location-related entrances may not be obvious</li>
+<li>If there is no mood data, mood statistics may have no content</li>
+<li>Some Pro features require purchase before use</li>
+<li>Some settings are shown inside a ledger, rather than in global settings</li>
+</ul>
+<p>First check whether you are currently on the ledger page, statistics page, or settings page.</p>
+<h3 id="q13-when-should-i-use-exclude-from-daily-stats">Q13: When should I use “Exclude from daily stats”?</h3>
+<p>Use it for entries that you do not want to affect daily spending analysis, such as:</p>
+<ul>
+<li>Paying on behalf of someone else</li>
+<li>Reimbursement</li>
+<li>Temporary adjustments</li>
+<li>Special expenses that are not part of daily spending</li>
+</ul>
+<p>These entries remain in the list, but are not included in related statistics.</p>
+<h3 id="q14-how-do-i-contact-support">Q14: How do I contact support?</h3>
+<p>You can contact support through “Settings” → “Report an Issue”.</p>
+<p>When reporting an issue, include:</p>
+<ul>
+<li>Device model</li>
+<li>iOS version</li>
+<li>App version</li>
+<li>Screenshots</li>
+<li>Steps to reproduce</li>
+<li>Error code, if the issue is purchase-related</li>
+</ul>
+<p>Do not send bank card numbers, passwords, verification codes, or other sensitive information in feedback.</p>
+<hr>
+<h2 id="version-notes">Version Notes</h2>
+<p>This guide explains Entryo’s main features and common questions.</p>
+<p>Actual features, interface names, and availability may change with app updates.</p>
+<p>If the app differs from this guide, please refer to the current in-app explanation.</p>
+      </div>
+      <footer><a href="../">Back to Home</a></footer>
+    </article>
+  </main>
+</body>
+</html>
