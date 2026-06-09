@@ -411,12 +411,20 @@
 <h3 id="monthly-budget">Monthly Budget</h3>
 <p>You can set a monthly budget to control monthly spending.</p>
 <p>Budgets are calculated using the ledger’s default currency. Entries in other currencies are converted using exchange rates and counted toward the budget.</p>
-<h3 id="available-today">Available Today</h3>
-<p>If a monthly budget is set, Entryo may show the amount available today.</p>
-<p>This value helps you understand whether current spending has exceeded the monthly progress.</p>
+<h3 id="budget-available-amounts">Budget Available Amounts</h3>
+<p>If a monthly budget is set, Entryo may show the amount remaining for today, the amount available per remaining day, or the amount by which the monthly budget has been exceeded.</p>
+<h4 id="remaining-today">Remaining Today</h4>
+<p>When spending this month is below the safe budget calculated by time progress, Entryo shows the amount remaining for today.</p>
+<p>This value helps you understand how much budget is still available today based on the current monthly progress.</p>
 <p>In general:</p>
-<pre><code>Available today = safe budget based on time progress - spending this month</code></pre>
-<p>If the available amount is negative, current spending has exceeded the budget level calculated by time progress.</p>
+<pre><code>Remaining today = safe budget based on time progress - spending this month</code></pre>
+<h4 id="available-per-remaining-day">Available per Remaining Day</h4>
+<p>When spending this month has reached or exceeded the safe budget calculated by time progress, but has not exceeded the monthly budget, Entryo shows the amount available per remaining day.</p>
+<p>This value helps you understand how much can be used each day if the remaining budget is spread across the remaining days of the month.</p>
+<p>In general:</p>
+<pre><code>Available per remaining day = remaining budget ÷ remaining days of the month</code></pre>
+<h4 id="budget-exceeded">Budget Exceeded</h4>
+<p>If spending this month exceeds the monthly budget, Entryo shows the amount by which the monthly budget has been exceeded.</p>
 <h3 id="category-budgets">Category Budgets</h3>
 <p>Pro users can set budgets for categories. Category budgets are useful for more detailed spending control, such as:</p>
 <ul>
