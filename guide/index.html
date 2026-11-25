@@ -723,14 +723,15 @@
 <p>Entryo can open the add-entry page with the <code>entryo://</code> URL scheme. You can use it from iOS Shortcuts, a QR code, or another app to open Entryo with entry information already filled in.</p>
 <p>The URL opens the add-entry page and pre-fills available fields. You still need to review and save the entry in Entryo.</p>
 <h3 id="url-scheme-format">URL format</h3>
-<pre><code>entryo://add-entry?book=Main%20Ledger&amp;amount=12.5&amp;note=Coffee&amp;date=2026-06-23&amp;currency=USD&amp;exchangeRate=1&amp;type=expense&amp;category=Food</code></pre>
-<p>If you build the URL manually or from variables, text values such as ledger, note, and category can usually be entered as shown in Entryo. If the text contains spaces or special characters, URL encoding can help avoid recognition issues.</p>
+<pre><code>entryo://add-entry?book=Main%20Ledger&amp;amount=12.5&amp;note=Coffee&amp;date=2026-06-23&amp;currency=USD&amp;exchangeRate=1&amp;type=expense&amp;category=Food&amp;tag=Work&amp;tag=Reimbursable</code></pre>
+<p>If you build the URL manually or from variables, text values such as ledger, note, and category can usually be entered as shown in Entryo. If the text contains spaces or special characters, URL encoding can help avoid recognition issues. Encode an ampersand (<code>&amp;</code>) inside a tag name as <code>%26</code>.</p>
 <h3 id="url-scheme-parameters">Supported parameters</h3>
 <div class="table-wrap"><table><thead><tr><th>Parameter</th><th>Value</th><th>Description</th></tr></thead><tbody>
 <tr><td><code>book</code></td><td>Ledger name, for example <code>Main Ledger</code></td><td>Target ledger. If omitted, Entryo uses the current ledger.</td></tr>
 <tr><td><code>amount</code></td><td>Number, for example <code>12.5</code></td><td>Entry amount.</td></tr>
 <tr><td><code>type</code></td><td><code>expense</code> or <code>income</code></td><td>Entry type. <code>expense</code> means expense, and <code>income</code> means income. Defaults to expense when omitted.</td></tr>
 <tr><td><code>category</code></td><td>Category name as shown in Entryo, for example <code>Food</code>, <code>Salary</code>, <code>Transport</code>, <code>Shopping</code></td><td>Preselects the category when the name exists in the target ledger. Custom category names can also be used.</td></tr>
+<tr><td><code>tag</code></td><td>An existing tag name in your account</td><td>Use one <code>tag</code> parameter per name to preselect multiple tags. Names must match exactly, including case. Repeated names select a tag once. Unmatched names are skipped.</td></tr>
 <tr><td><code>note</code></td><td>Text, for example <code>Coffee</code></td><td>Entry note.</td></tr>
 <tr><td><code>date</code></td><td><code>yyyy-MM-dd</code>, <code>yyyy-MM-dd HH:mm</code>, or ISO 8601</td><td>Entry date. Future dates are adjusted to the current time.</td></tr>
 <tr><td><code>currency</code></td><td>Currency code, for example <code>USD</code>, <code>CNY</code>, <code>JPY</code></td><td>If omitted, Entryo uses the ledger default currency.</td></tr>
@@ -738,8 +739,8 @@
 </tbody></table></div>
 <p>If the specified ledger, category, or currency cannot be found, Entryo will open the add-entry page with the remaining valid fields. URL Scheme will not create new ledgers, categories, or currencies automatically.</p>
 <h3 id="url-scheme-example">Example</h3>
-<pre><code>entryo://add-entry?book=Main%20Ledger&amp;amount=12.5&amp;note=Coffee&amp;date=2026-06-23&amp;currency=USD&amp;exchangeRate=1&amp;type=expense&amp;category=Food</code></pre>
-<p>This example opens Entryo, selects “Main Ledger”, and opens the add-entry page with a USD 12.5 coffee expense.</p>
+<pre><code>entryo://add-entry?book=Main%20Ledger&amp;amount=12.5&amp;note=Coffee&amp;date=2026-06-23&amp;currency=USD&amp;exchangeRate=1&amp;type=expense&amp;category=Food&amp;tag=Work&amp;tag=Reimbursable</code></pre>
+<p>This example opens Entryo, selects “Main Ledger”, and opens the add-entry page with a USD 12.5 coffee expense. If your account has the tags “Work” and “Reimbursable”, both are preselected.</p>
 <h3 id="url-scheme-shortcuts">Use with iOS Shortcuts</h3>
 <ol>
 <li>Open the Shortcuts app and create a new shortcut.</li>
